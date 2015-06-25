@@ -69,6 +69,8 @@
 ;; usage: http://magit.github.io/documentation
 ;; GROUP: Programming -> Tools -> Magit
 (require 'magit)
+;; do not display setup info at startup
+(setq magit-last-seen-setup-instructions "1.4.0")
 (set-default 'magit-stage-all-confirm nil)
 (add-hook 'magit-mode-hook 'magit-load-config-extensions)
 

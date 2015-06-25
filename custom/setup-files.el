@@ -97,6 +97,7 @@
 
 ;; handle large files (vlf)
 ;; usage: https://github.com/m00natic/vlfi#detail-usage
-(require 'vlf-integrate)
-(setq vlf-application 'dont-ask) ;; auto use vlf on large files
+(require 'vlf-setup)
+(custom-set-variables
+ '(vlf-application 'dont-ask)) ;; auto use vlf on large files
 

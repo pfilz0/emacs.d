@@ -25,6 +25,20 @@
       helm-ff-file-name-history-use-recentf t)
 
 (helm-mode 1)
+;; autoresize minibuffer (with suggestions)
+(helm-autoresize-mode t)
+;; keep golden ratio from interfering with helm
+(defun pl/helm-alive-p ()
+  (if (boundp 'helm-alive-p)
+      (symbol-value 'helm-alive-p)))
+
+(add-to-list 'golden-ratio-inhibit-functions 'pl/helm-alive-p)
+
+;; get manpage of symbol at point
+;; (add-to-list 'helm-sources-using-default-as-input 'helm-source-man-pages)
+
+;; use google search from helm buffer
+(global-set-key (kbd "C-c h g") 'helm-google-suggest)
 
 ;; -------------------------------------------------------------------------- ;;
 ;; key bindings                                                               ;;
@@ -34,3 +48,8 @@
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
+
+
+
+(provide 'setup-helm)
+;;; setup-helm.el ends here

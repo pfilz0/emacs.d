@@ -17,9 +17,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/patrickh/.emacs.d/"
  "/home/patrickh/.emacs.d/custom/"
  "/home/patrickh/PSI/Python/testing/"
- "/home/patrickh/.emacs.d/"
  "/afs/psi.ch/user/h/helfenstein_p/.emacs.d/custom/"
  "/afs/psi.ch/user/h/helfenstein_p/.emacs.d/"
  "/afs/psi.ch/user/h/helfenstein_p/Python/testing/"
@@ -30,6 +30,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "setup-faces-and-ui.el"
  "boost_py_test.cpp"
  "setup-helm.el"
  "setup-convenience.el"
@@ -42,9 +43,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/patrickh/.emacs.d/custom/" (21899 62122 688005 16000) "setup-applications.el" "setup-text.el" "setup-editing.el~" "./" "setup-helm.el" "setup-programming.el" "setup-help.el" "setup-faces.el" "setup-communication.el" "setup-helm.el~" "setup-environment.el" "setup-convenience.el~" "setup-files.el" "setup-data.el" "setup-external.el" "setup-development.el" "../" "setup-local.el" "setup-files.el~" "setup-multimedia.el")
+ ("/home/patrickh/.emacs.d/" (21900 10811 126719 811000) "README.md" "./" "init.el" "url/" "ido.last~" "auto-save-list/" "places" "projectile-bookmarks.eld" ".gitignore" "ido.last" "custom/" ".git/" "bookmarks" "elpa/" "session.10be5e4548bdbaca1c143498303012971900000012470030" "init.el~" "../" "recentf" "recentf~" "session.108b0af343b187cb53143436714178893000000079670080" "session.108b0af343b187cb53143496042327820800000079670090")
 
- ("/home/patrickh/.emacs.d/" (21899 62122 688005 16000) "./" "init.el" "url/" "ido.last~" "auto-save-list/" "projectile-bookmarks.eld" "ido.last" "setup-editing.el" "custom/" "bookmarks" "elpa/" "session.10be5e4548bdbaca1c143498303012971900000012470030" "init.el~" "../" "setup-convinience.el" "recentf" "recentf~" "session.108b0af343b187cb53143436714178893000000079670080" "session.108b0af343b187cb53143496042327820800000079670090")
+ ("/home/patrickh/.emacs.d/custom/" (21900 2651 796294 629000) "setup-convenience.el" "setup-applications.el" "setup-text.el" "setup-editing.el~" "./" "setup-helm.el" "setup-programming.el" "setup-help.el" "setup-faces.el" "setup-communication.el" "setup-helm.el~" "setup-editing.el" "setup-environment.el" "setup-convenience.el~" "setup-files.el" "setup-data.el" "setup-external.el" "setup-development.el" "../" "setup-local.el" "setup-files.el~" "setup-multimedia.el")
 
  ("/home/patrickh/PSI/Python/testing/" (21890 44898 418576 904000) "general_tests" "fib.pyx" "setup.py" "mpi_test" "cmap" "./" ".ipynb_checkpoints/" "#mpi_test.py#" "cyarma_test.so" "fft_arma.cpp" "mpi4py_test/" "general_tests.cpp" "fib.c" "cyarma_test.cpp" "mpi_test.cpp" "Untitled.ipynb" "Jamroot" "build/" "cyarma_test.pyx" "fib.pyx~" "cyarma_test.pyx~" "cmap.cpp~" "general_tests.cpp~" "boost_py_test.cpp" "../" "fft_arma.cpp~" "poppy_test.py" "mpi_test.cpp~" "cmap.cpp" "fib.so.old" "fft_arma")
 
