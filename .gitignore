@@ -1,0 +1,15 @@
+# local files & folders
+bookmarks
+projectile-bookmarks.eld
+recentf
+auto-save-list/**
+
+# saved sessions
+session.*
+
+# ignore backup files
+*~
+
+# ignore emacs autosave files
+*#
+.#*
