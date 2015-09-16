@@ -18,10 +18,27 @@
 ;; more useful frame title, that show either a file or a
 ;; buffer name (if the buffer isn't visiting a file)
 ;; taken from prelude-ui.el
+;;(setq frame-title-format
+;;      '("" invocation-name " - " (:eval (if (buffer-file-name)
+;;                                                   (abbreviate-file-name (buffer-file-name))
+;;                                                 "%b"))))
+
 (setq frame-title-format
-      '("" invocation-name " - " (:eval (if (buffer-file-name)
-                                                    (abbreviate-file-name (buffer-file-name))
-                                                  "%b"))))
+              '(:eval
+                (format "%s %s"
+                ;; (format "%s@%s: %s %s"
+                        ;;(or (file-remote-p default-directory 'user)
+                        ;;    user-real-login-name)
+                        ;;(or (file-remote-p default-directory 'host)
+                        ;;    system-name)
+                        (buffer-name)
+                        (cond 
+                         (buffer-file-truename
+                          (concat "(" buffer-file-truename ")"))
+                         (dired-directory
+                          (concat "{" dired-directory "}"))
+                         (t
+                          "[no file]")))))
 
 ;; change font to Inconsolata for better looking text
 ;; remember to install the font Inconsolata first
